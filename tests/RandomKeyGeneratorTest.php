@@ -12,10 +12,7 @@
  * @version   <package-version>
  * @link      http://public.intraface.dk
  */
-require_once 'PHPUnit/Framework.php';
 require_once dirname(__FILE__) . '/../src/Ilib/RandomKeyGenerator.php';
-
-PHPUnit_Util_Filter::addDirectoryToWhitelist(realpath(dirname(__FILE__) . '/../src/'));
 
 /**
  * Test class
