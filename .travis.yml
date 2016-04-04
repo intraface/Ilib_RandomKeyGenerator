@@ -6,4 +6,4 @@ install:
   - composer install
 script: 
   - phpunit ./tests
-  - ./vendor/bin/phpcs --standard=rphpcs.xml src
+  - ./vendor/bin/phpcs --standard=phpcs.xml src
