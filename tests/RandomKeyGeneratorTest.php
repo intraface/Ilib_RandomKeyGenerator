@@ -44,6 +44,5 @@ class RandomKeyGeneratorTest extends PHPUnit_Framework_TestCase
         $length = 30;
         $generator = new Ilib_RandomKeyGenerator();
         $this->assertEquals($length, strlen($generator->generate($length)));
-
     }
 }

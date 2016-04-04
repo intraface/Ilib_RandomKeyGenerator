@@ -41,24 +41,13 @@ class Ilib_RandomKeyGenerator
     private $chars = 'abcdefghijkmnpqrstuvwxyzABCDEFGHJKLMNPQRSTUVWXYZ23456789';
 
     /**
-     * Constructor
-     *
-     * @param integer $length Length of the string to generate
-     *
-     * @return void
-     */
-    function __construct()
-    {
-    }
-
-    /**
      * Makes a random key - e.g. for passwords
      *
      * Won't return 0 (zero) or o (as in Ole) or 1 (one) or l (lars), because they can be mistaken on print.
      *
      * @return string random key only letters
      */
-    function generate($length = 6)
+    public function generate($length = 6)
     {
         srand((double)microtime() * 1000000);
         $how_many = strlen($this->chars);
